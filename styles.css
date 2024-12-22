@@ -46,21 +46,25 @@ button:hover {
     margin-bottom: 20px;
 }
 
+/* Stile base per le carte */
 .card {
     width: 150px;
     height: 150px;
-    background-color: #333;  /* Inizialmente nero */
+    background-color: #333;  /* Inizialmente tutte nere */
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;  /* Aggiunta transizione */
-    background-size: cover;
-    background-position: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
 }
 
-/* Immagini per le carte */
+/* Immagini per le carte (nascondiamole all'inizio) */
 .card[data-card="logo"] {
-    background-image: url('logo.jpg'); /* Assicurati di avere questa immagine */
+    background-image: url('logo.jpg');
 }
 
 .card[data-card="album1"] {
@@ -79,10 +83,10 @@ button:hover {
     background-image: url('album4.jpg');
 }
 
-/* Quando una carta è girata, la faccia diventa visibile */
+/* Quando la carta è girata (la mostra), cambia lo sfondo e mostra l'immagine */
 .card.flipped {
-    background-color: transparent; /* Rende trasparente lo sfondo per vedere l'immagine */
-    transform: rotateY(180deg);  /* Effetto di rotazione */
+    background-color: transparent;  /* Rende trasparente lo sfondo per vedere l'immagine */
+    transform: rotateY(180deg);  /* Effetto rotazione per il flip */
 }
 
 /* Effetto di rotazione per la carta */
