@@ -56,3 +56,6 @@ function startGame() {
     gameBoard.innerHTML = '';  // Resetta la griglia
     createCards();
 }
+
+// Assicurati che la funzione startGame venga invocata correttamente al clic
+document.querySelector("button").addEventListener("click", startGame);

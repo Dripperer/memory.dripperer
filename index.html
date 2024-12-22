@@ -3,39 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game - Dripperer Band</title>
+    <title>Memory Game - Band Dripperer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Aggiungi il file audio per la musica di sottofondo -->
-    <audio id="background-music" autoplay loop>
-        <source src="musica.mp3" type="audio/mp3">
-        Il tuo browser non supporta il tag audio.
-    </audio>
-
     <div class="container">
-        <h1>Memory Game - Dripperer Band</h1>
-        <p>Scopri il logo della tua band e vinci! Segui i pattern per completare il gioco.</p>
-
-        <div class="game-board">
-            <!-- Le carte (4 immagini, 2 coppie per ciascuna) -->
-            <div class="card" data-card="logo"></div>
-            <div class="card" data-card="logo"></div>
-
-            <div class="card" data-card="album1"></div>
-            <div class="card" data-card="album1"></div>
-
-            <div class="card" data-card="album2"></div>
-            <div class="card" data-card="album2"></div>
-
-            <div class="card" data-card="album3"></div>
-            <div class="card" data-card="album3"></div>
-
-            <div class="card" data-card="album4"></div>
-            <div class="card" data-card="album4"></div>
-        </div>
-
-        <button id="start-game">Inizia il Gioco</button>
+        <h1>Memory Game</h1>
+        <p>Scopri le carte e segui il gioco della band!</p>
+        <div class="game-board"></div>
+        <button onclick="startGame()">Inizia il Gioco</button>
     </div>
 
     <script src="script.js"></script>
