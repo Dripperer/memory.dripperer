@@ -35,7 +35,7 @@ function flipCard(event) {
     // Se la carta è già stata girata o è già stata abbinata, non fare nulla
     if (clickedCard.classList.contains('flipped') || flippedCards.length === 2) return;
 
-    // Mostra la carta
+    // Mostra la carta (aggiungi la classe 'flipped')
     clickedCard.classList.add('flipped');
     flippedCards.push(clickedCard);
 
